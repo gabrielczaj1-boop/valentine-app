@@ -32,8 +32,8 @@ function App() {
   // Get button texts
   const getNoText = () => {
     if (noClicks === 0) return 'No'
-    if (noClicks === 1) return 'Are you sure? 🥺'
-    return 'Are you sure? 🥺'
+    if (noClicks === 1) return 'Are you sureeeee? 🥺'
+    return 'Are you sureeeee? 🥺'
   }
 
   const getYesText = () => {
@@ -56,13 +56,13 @@ function App() {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-6xl font-bold text-rose-600 mb-8"
           >
-            Yay! See you on the 14th! 🌹✨
+            Ok Yay! 🌹✨
           </motion.h1>
           <motion.img
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 0.4, type: "spring", stiffness: 150 }}
-            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHp0Znd6Z3ZueHByZ3A0eHh3Z3ZueHByZ3A0eHh3Z3ZueHByZ3A0eHh3JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZ2VudGlmaWVyJmN0PWc/c77vAnfU7vKVS/giphy.gif"
+            src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDBtNDZ6aDBrbDhsb2tpbnF4YnR5cWFpd2xtc3dyYWI1NGllZmVkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4N1wOi78ZGzSB6H7vK/giphy.gif"
             alt="Happy Dance"
             className="mx-auto rounded-lg shadow-2xl max-w-md w-full"
           />
@@ -103,14 +103,24 @@ function App() {
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4">
         {/* Header */}
-        <motion.h1
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 200 }}
-          className="text-3xl md:text-5xl font-bold text-rose-600 mb-8 text-center"
-        >
-          Will you be my valentine? 💖
-        </motion.h1>
+        <div className="mb-8 text-center">
+          <motion.h1
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 200 }}
+            className="text-3xl md:text-5xl font-bold text-rose-600 mb-2"
+          >
+            Will you be my valentine? 💖
+          </motion.h1>
+          <motion.p
+            initial={{ y: -30, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ type: "spring", stiffness: 200, delay: 0.1 }}
+            className="text-xl md:text-2xl text-rose-500 font-semibold"
+          >
+            Love, Gabe
+          </motion.p>
+        </div>
 
         {/* Cute Pet */}
         <motion.div
